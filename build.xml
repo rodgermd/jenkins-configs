@@ -152,11 +152,11 @@
   <target name="clearcache" depends="vendors" description="Clears cache and builds assets">
     <exec executable="app/console" failonerror="true">
       <arg value="ca:cl"/>
-      <arg value="--env=prod"/>
+      <arg value="--env=test"/>
     </exec>
     <exec executable="app/console" failonerror="true">
       <arg value="assetic:dump"/>
-      <arg value="--env=prod"/>
+      <arg value="--env=test"/>
     </exec>
   </target>
 
